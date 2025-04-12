@@ -4,80 +4,129 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/style.css">
-        <title>SS+</title>
-
-            <!-- Google tag (gtag.js) -->
+        <title>Portifólio</title>
+        
+        <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0FSRDKJ91"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'G-Y0FSRDKJ91');
+            </script>
+
+
+</head>
+
+
+<body>  
+    <div class="wrapper">
         
-          gtag('config', 'G-Y0FSRDKJ91');
-        </script>
-
-
-    </head>
-
-
-    <body>  
-        <div class="wrapper">
-
-
-
-            <div class="header">
-                <div class="header_left_container">
+        
+        
+        <div class="header">
+            
+            <div class="header_left_container">
+                <a href="#inicio">
                     <img src="./img/header/logo.png" class="header_logo">
                 </div>
-
-
-                <div class="header_center_container">
-                    <a href="#sobre">Sobre</a>
-                    <a href="#projetos">Trabalhos</a>
+            </a>
+            
+            
+            <div class="header_center_container">
+                <a href="#sobre">Sobre</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Trabalhos</a>
+            </div>
+            
+            <div class="header_right_container">
+                <div class="header_right_container_icons">
+                    <div class="header_icon_container">
+                        <a href="https://github.com/Bravudo">
+                            <img src="./img/header/github.png">
+                            <span>GitHub</span>
+                        </a>
+                    </div>
                 </div>
                 
-                <div class="header_right_container">
-                            <div class="header_right_container_icons">
-                                <div class="header_icon_container">
-                                <a href="https://github.com/Bravudo/GCS">
-                                    <img src="./img/header/github.png">
-                                    <span>GitHub</span>
-                                </a>
-                                </div>
-                            </div>
-                                
-                </div>
-
             </div>
-
-            <!-- Banner -->
-             <div class="banner_container">
-
-                <div class="banner_decorations">
-                        <div class="banner_decorations_item"></div>
-                        <div class="banner_decorations_item2"></div>
-                        <div class="banner_decorations_item3"></div>
+            
+        </div>
+        
+        <!-- Banner -->
+             <div class="banner_container" id="inicio">
+                 
+                 <div class="banner_decorations">
+                     <div class="banner_decorations_item"></div>
+                     <div class="banner_decorations_item2"></div>
+                     <div class="banner_decorations_item3"></div>
                     </div>
-    
+                    
                     <div class="profile_container">
                         <h1>Oi, eu sou Gabriel Cursino</h1>
                         <h2>Desenvolvedor Web Front-End</h2>
                     </div>
-
+                    
                     <div class="banner_decorations">
                         <div class="banner_decorations_item3"></div>
                         <div class="banner_decorations_item2"></div>
                         <div class="banner_decorations_item"></div>
                     </div>
-             </div>
-            
+                </div>
+                
+                <!-- Sobre -->
+                <div class="redirect" id="sobre"></div>
+                <div class="qualifications_wrapper_container" >
+                    
+                    <div class="qualifications_decorations_container">
+                        <div class="qualifications_decorations_circle"></div>
+                        <div class="qualifications_decorations_triangle"></div>
+                        <div class="qualifications_decorations_square"></div>
+                    </div>
 
-            
-        </div>
-    </body>
+
+                    <div class="qualifications_wrapper_text_container">
+                        <div class="qualifications_title">
+                            Sobre
+                        </div>
+                        <div class="qualifications_text">
+                            <p>Sou um desenvolvedor web front-end dedicado a React e CSS3. 
+                                Tenho 9 meses de prática e busco criar código limpo e soluções
+                                eficazes para projetos web.</p>
+                                <img src="./img/about/star.png">
+                        </div>
+                        <div class="qualifications_text">
+                            <p>Estou em busca da minha primeira oportunidade profissional
+                                 na área e, enquanto isso, venho desenvolvendo projetos 
+                                 próprios para praticar e evoluir. Aqui você encontra alguns
+                                  desses trabalhos, fique à vontade para <a href="#projetos">explorar!</a></p>
+                                
+                        </div>
+                    </div>
 
 
-
-
+                    <div class="qualifications_decorations_container">
+                        <div class="qualifications_decorations_square"></div>
+                        <div class="qualifications_decorations_triangle" style="transform: rotate(180deg);"></div>
+                        <div class="qualifications_decorations_circle"></div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+                
+                
+            </div>
+        </body>
+        
+        
+        
         <script src="./js/javascript.js"></script>
+
+        
 </html>
