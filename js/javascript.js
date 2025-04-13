@@ -79,7 +79,7 @@ window.addEventListener('scroll', () => {
   const currentScroll = window.scrollY;
   
   // Verifica se está subindo E entrou na área do banner
-  if (currentScroll <= 500 && currentScroll < lastScrollPosition) {
+  if (currentScroll <= 395 && currentScroll < lastScrollPosition) {
     playAnimations();
   }
   
