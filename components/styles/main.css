@@ -1,0 +1,15 @@
+/*   All Imports   */
+
+@import url('../../public/styles/global.css');
+@import url('./sections/banner.css');
+@import url('./sections/about.css');
+@import url('./sections/skill.css');
+@import url('./sections/project.css');
+@import url('./sections/header.css');
+
+/*  Default Reset Page  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

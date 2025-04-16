@@ -1,0 +1,97 @@
+/*    Fontes Importadas    */
+@import url('./styles/fonts/fonts.css');
+
+:root{
+    
+    /*___Size*/
+    --page-max-width: 1920px;
+
+    
+    /*___Header*/
+    --header-height-size: 30px;
+    --header-width-size: 100%;
+    --header-item-title-size: 22px;
+    /*--Logo*/
+    --header-logo-width-size: 45px;
+    --header-logo-padding-size: 3px;
+    /*--Icon*/
+    --header-icon-padding-size: 7px;
+    /*--Hover*/
+    --header-items-color-hover: rgba(146, 146, 146, 0.152);
+    --header-items-time-hover: 0.1s;
+    
+    /*___Banner*/
+    --text-title-size: 55px;
+    --text-subtitle-size: 28px;
+    /*--Decorations*/
+    --item-1-decoration-size: 100px;
+    --item-2-decoration-size: 70px;
+    --item-3-decoration-size: 50px;
+    
+
+    /*__About*/
+    --geometric-icons-size: 215px;
+    --geometric-icon-triangle-size: calc(var(--geometric-icons-size) / 2 - 2);
+    --geometric-icon-border-size: 2px;
+    --geometric-icon-gap: 100px;
+
+    --about-text-title-size: 35px;
+    --about-text-size: 20px;
+
+
+    /*__Skills*/
+    --text-skills-title-size: 35px;
+    /*--Title*/
+    --skill-title-icon-size: 25px;
+    /*--Card*/
+    --card-icon-size: 30px;
+    
+    
+    /*___Colors*/
+    --primary-color: rgb(38, 38, 38);
+    --secondary-color: rgb(255, 175, 45);
+    --terceary-color: rgb(232, 232, 232);
+    --quaternary-color: #af3bf1;
+    --quinary-color: #555555;
+    --sixtenary-color: #313131;
+    --sevenary-color: #686868;
+
+    /*__Fonts*/
+    --primary-font: "Quicksand";
+}    
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}    
+
+html{
+    scroll-behavior: smooth;
+}    
+
+body{
+    font-family: var(--primary-font), sans-serif;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+
+}    
+
+.wrapper{
+    width: 100%;
+    max-width: var(--page-max-width);
+    margin: 0 auto;     
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+}    
+
+
+
+
+
+
+
+

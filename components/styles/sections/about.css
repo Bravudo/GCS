@@ -1,0 +1,128 @@
+/*__Sobre*/
+
+.content_wrapper_container{
+    width: 80%;
+    max-width: var(--page-max-width);
+    margin: 0 auto;     
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*--Texto--*/
+.about_wrapper_text_container{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px;
+    margin: 0 auto;     
+    max-width: 80%;
+
+    gap: 25px;
+}
+
+.about_title{
+    font-size: var(--about-text-title-size);
+    color: var(--terceary-color);
+    font-family: var(--primary-font);
+    font-weight: 300;
+}
+
+.about_text{
+    width: 100%;
+    position: relative;
+
+    padding: 14px 45px;
+    border: solid 2px var(--quinary-color);
+
+    text-align: left;
+
+    color: var(--terceary-color);
+    line-height: 1.5;
+    font-size: var(--about-text-size);
+    font-family: var(--primary-font);
+    font-weight: 200;
+
+    transition: all 0.150s ease-out;
+}
+
+.about_text a{
+    color: var(--secondary-color);
+}
+
+.about_text img{
+    position: absolute;
+    top: 13px;
+    left: 12px;
+    max-width: 30px;
+    height: auto;
+}
+
+.about_text:hover{
+    border: 2px solid var(--secondary-color)
+}
+
+/*Decorações*/
+.about_decorations_container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: var(--geometric-icon-gap);
+}
+
+.about_decorations_circle{
+    border: solid var(--geometric-icon-border-size) var(--quinary-color);
+    border-radius: 100%;
+    background-color: transparent;
+
+    height: var(--geometric-icons-size);
+    width: var(--geometric-icons-size);
+    transition: all 0.150s ease-out;
+}
+
+.about_decorations_triangle{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 0;
+    height: 0;
+    border-left: calc(var(--geometric-icons-size) / 2) solid transparent;
+    border-right: calc(var(--geometric-icons-size) / 2) solid transparent;
+    border-bottom: calc(var(--geometric-icons-size) / 2  * 1.732) solid var(--quinary-color);
+
+    transition: all 0.150s ease-out;
+}
+.about_decorations_triangle:hover{
+    border-bottom: calc(var(--geometric-icons-size) / 2  * 1.732) solid var(--secondary-color);
+}
+.about_decorations_triangle::before{
+    content: '';
+    position: absolute;
+
+    top: var(--geometric-icon-border-size) ;
+
+    width: 0;
+    height: 0;
+    border-left: calc(var(--geometric-icons-size) / 2 - var(--geometric-icon-border-size)) solid transparent;
+    border-right: calc(var(--geometric-icons-size) / 2 - var(--geometric-icon-border-size) ) solid transparent;
+    border-bottom: calc((var(--geometric-icons-size) / 2 * 1.7338) - var(--geometric-icon-border-size) * 1.732) solid var(--primary-color);
+}
+
+.about_decorations_square{
+    height: var(--geometric-icons-size);
+    width: var(--geometric-icons-size);
+    border: var(--geometric-icon-border-size)  solid var(--quinary-color);
+    transition: all 0.150s ease-out;
+}
+.about_decorations_square:hover,.about_decorations_circle:hover{
+    border: 2px solid var(--secondary-color)
+}

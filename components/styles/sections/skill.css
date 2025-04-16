@@ -1,0 +1,171 @@
+/*__Qualifications*/
+
+
+.qualifications_background{
+    background-color: var(--sixtenary-color);
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+
+}
+.qualifications_wrapper_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    margin: 0 auto;     
+    width: 80%;
+    max-width: var(--page-max-width);
+    
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+}
+
+
+.qualification_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 25px;
+    
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    padding: 100px;
+
+    color: var(--terceary-color);
+    line-height: 1.5;
+    font-size: var(--about-text-size);
+    font-family: var(--primary-font);
+    
+    transition: all 0.150s ease-out;
+}
+
+.qualification_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.qualification_title h1{
+    font-size: var(--about-text-title-size);
+    color: var(--terceary-color);
+    font-weight: 200;
+}
+
+.qualification_card_container{
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    gap: 4px;
+    max-width: 99%;
+    
+    padding: 14px 40px;
+    border: solid 1px var(--sevenary-color);
+    transition: all 0.15s ease-out;
+}
+.qualification_card_container:hover{
+    border: solid 1px var(--terceary-color);
+}
+
+
+/*--Qualification Title*/
+.qualification_skill_title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.qualification_skill_title h1{
+    font-size: var(--about-text-size);
+    color: var(--terceary-color);
+    font-weight: 200;
+}
+.qualification_skill_title img{
+    max-width: var(--skill-title-icon-size);
+    height: var(--skill-title-icon-size);
+}
+
+
+.skill_card_container{
+    display: flex;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: 5px;
+
+    user-select: none;
+    cursor:default;
+    
+}
+.skill_card{
+    display: flex;
+    max-width: 100%;
+
+    gap: 6px;
+    padding: 5px 10px;
+    border: solid 1px var(--sevenary-color);
+    border-radius: 5px;
+    transition: all 0.1s ease-out;
+}
+
+.skill_card:hover{
+    border: solid 1px var(--terceary-color);
+}
+
+.skill_card p{
+    font-size: var(--about-text-size);
+    color: var(--terceary-color);
+    font-weight: 200;
+}
+.skill_card img{
+    width: var(--card-icon-size);
+    height: auto;
+}
+
+
+
+
+
+/*--Engrenagens*/
+.qualification_decoration{
+    max-width: var(--geometric-icons-size);
+    height: auto;
+    object-fit: cover;
+    transition: all 0.250s ease-out;
+}
+.qualification_decoration:hover{
+    scale: calc(1.05);
+    filter: 
+    brightness(2.15) 
+    contrast(1.1) 
+    saturate(1.8)
+    drop-shadow(0 0 1px rgba(255,255,255,0.8));
+}
+
+@keyframes engrenagemGirandoDireita{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes engrenagemGirandoEsquerda{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
