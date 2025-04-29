@@ -29,6 +29,7 @@
 }
 .header_center_container{
     justify-content: space-between;
+    gap: 25px;
 }
 .header_right_container{
     gap: 15px;
@@ -100,7 +101,7 @@
  }
 
  .header_icon_container img{
-    width: 45px;
+    width: clamp(25px, 5vw, 45px);
     height: auto;
     padding: 5px;
     border-radius: 13px;

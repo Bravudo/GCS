@@ -36,7 +36,7 @@
     width: 100%;
     position: relative;
 
-    padding: 14px 45px;
+    padding: clamp(6px, 0.9vw, 14px) clamp(16px, 2.5vw, 45px);
     border: solid 2px var(--quinary-color);
 
     text-align: left;
@@ -56,9 +56,9 @@
 
 .about_text img{
     position: absolute;
-    top: 13px;
-    left: 12px;
-    max-width: 30px;
+    top: clamp(6px, 0.8vw, 13px);
+    left: clamp(5px, 0vw, 13px);
+    max-width: clamp(15px, 1.7vw, 30px);
     height: auto;
 }
 

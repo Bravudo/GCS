@@ -70,7 +70,7 @@
     gap: 4px;
     max-width: 99%;
     
-    padding: 14px 40px;
+    padding: clamp(3px, 0.8vw, 14px) clamp(20px, 2.2vw, 40px);
     border: solid 1px var(--sevenary-color);
     transition: all 0.15s ease-out;
 }
@@ -102,7 +102,7 @@
 
     box-sizing: border-box;
     max-width: 100%;
-    gap: 5px;
+    gap: clamp(2px, 0.3vw, 5px);
 
     user-select: none;
     cursor:default;
@@ -113,7 +113,7 @@
     max-width: 100%;
 
     gap: 6px;
-    padding: 5px 10px;
+    padding: clamp(2px, 0.3vw, 5px) clamp(5px, 0.5vw, 10px);
     border: solid 1px var(--sevenary-color);
     border-radius: 5px;
     transition: all 0.1s ease-out;
