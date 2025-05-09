@@ -12,7 +12,7 @@
     padding: clamp(25px, 4vw ,50px);
       
     width: 100%;
-    height: 700px;
+    height: clamp(300px, 50vw, 700px);
     background: var(--terceary-color);
   }
 
@@ -64,14 +64,14 @@
       .banner_decorations_item{
         max-width: var(--item-1-decoration-size);
         max-height: var(--item-1-decoration-size);
-        border: solid clamp(4px, 0.5vw, 8px) var(--primary-color);
+        border: solid clamp(1px, 0.5vw, 8px) var(--primary-color);
         
         
 }
 .banner_decorations_item2{
     max-width: var(--item-2-decoration-size);
     max-height: var(--item-2-decoration-size);
-    border: solid clamp(3px, 0.4vw, 7px) var(--secondary-color);
+    border: solid clamp(1px, 0.4vw, 7px) var(--secondary-color);
 
 
 }
@@ -79,7 +79,7 @@
 .banner_decorations_item3{
     max-width: var(--item-3-decoration-size);
     max-height:var(--item-3-decoration-size);
-    border: solid clamp(2px, 0.3vw, 5px) var(--primary-color);
+    border: solid clamp(1px, 0.3vw, 5px) var(--primary-color);
 
 }
 

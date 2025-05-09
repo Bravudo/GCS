@@ -7,11 +7,10 @@
     margin: 0 auto;
     position: fixed;
     z-index: 10;
-
+ 
     width: 100%;
-    max-width: var(--page-max-width);
     height: auto;
-    padding: 0px 40px;
+    padding: 0px clamp(5px, 3vw, 40px);
     padding-top: 3px;
 
 }
@@ -26,10 +25,12 @@
 
 .header_left_container{
     justify-content: flex-start;
+
 }
 .header_center_container{
     justify-content: space-between;
     gap: 25px;
+
 }
 .header_right_container{
     gap: 15px;
@@ -57,7 +58,7 @@
     font-size: var(--header-item-title-size);
     font-weight: 400;
     
-    color: var(--primary-color);
+    color: var(--secondary-color);
 
     padding: 5px;
     border-radius: 7px;
@@ -101,9 +102,9 @@
  }
 
  .header_icon_container img{
-    width: clamp(25px, 5vw, 45px);
+    width: clamp(22px, 4.3vw, 45px);
     height: auto;
-    padding: 5px;
+    padding: clamp(2px, 1vw, 5px);
     border-radius: 13px;
     filter: brightness(0) invert(0);
     transition: all var(--header-items-time-hover) ease-out;
@@ -124,10 +125,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 37px;
+    margin-top: clamp(20px, 4vw, 37px);
     
     font-weight: 700;
-    font-size: 13px;
+    font-size: clamp(4px, 1vw, 15px);
     padding: 4px 8px;
     border-radius: 4px;
 

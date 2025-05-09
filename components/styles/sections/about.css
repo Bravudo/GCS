@@ -18,9 +18,9 @@
     align-items: center;
     justify-content: center;
 
-    padding: 100px;
-    margin: 0 auto;     
-    max-width: 80%;
+    padding: clamp(20px, 10vw, 100px);
+    margin: 0 auto;  
+    max-width: 100%;
 
     gap: 25px;
 }
@@ -74,6 +74,13 @@
     width: auto;
     height: auto;
     gap: var(--geometric-icon-gap);
+}
+
+@media screen and (max-width: 750px) {
+    .about_decorations_container{
+        display: none;
+        opacity: 0;
+    }
 }
 
 .about_decorations_circle{

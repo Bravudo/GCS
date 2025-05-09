@@ -4,7 +4,7 @@
 .qualifications_background{
     background-color: var(--sixtenary-color);
     width: 100%;
-    height: auto;
+    height: clamp(300px, 50vw, 700px);
 
     display: flex;
     justify-content: center;
@@ -20,8 +20,8 @@
     width: 80%;
     max-width: var(--page-max-width);
     
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 
 }
 
@@ -37,7 +37,7 @@
     max-width: 100%;
     width: 100%;
     position: relative;
-    padding: 100px;
+    padding: clamp(20px, 10vw, 100px);
 
     color: var(--terceary-color);
     line-height: 1.5;
@@ -151,6 +151,12 @@
     contrast(1.1) 
     saturate(1.8)
     drop-shadow(0 0 1px rgba(255,255,255,0.8));
+}
+
+@media screen and (max-width: 750px){
+    .qualification_decoration{
+        display: none;
+    }
 }
 
 @keyframes engrenagemGirandoDireita{

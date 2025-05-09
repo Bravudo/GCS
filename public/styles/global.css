@@ -10,7 +10,7 @@
     /*___Header*/
     --header-height-size: 30px;
     --header-width-size: 100%;
-    --header-item-title-size: clamp(14px, 1.5vw, 23px);
+    --header-item-title-size: clamp(10px, 1.5vw, 23px);
     /*--Logo*/
     --header-logo-width-size: clamp(30px, 3vw, 45px);
     --header-logo-padding-size: 3px;
@@ -21,12 +21,12 @@
     --header-items-time-hover: 0.1s;
     
     /*___Banner*/
-    --text-title-size: clamp(13px, 3vw, 55px);
-    --text-subtitle-size: clamp(9px, 1.7vw, 28px);
+    --text-title-size: clamp(10px, 3vw, 55px);
+    --text-subtitle-size: clamp(7px, 1.7vw, 28px);
     /*--Decorations*/
-    --item-1-decoration-size: clamp(35px, 5.5vw, 100px);
-    --item-2-decoration-size: clamp(25px, 3.8vw, 70px);
-    --item-3-decoration-size: clamp(15px, 2.5vw, 50px);
+    --item-1-decoration-size: clamp(20px, 5.5vw, 100px);
+    --item-2-decoration-size: clamp(13px, 3.8vw, 70px);
+    --item-3-decoration-size: clamp(8px, 2.5vw, 50px);
     
 
     /*__About*/
