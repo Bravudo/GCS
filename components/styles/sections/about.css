@@ -56,8 +56,8 @@
 
 .about_text img{
     position: absolute;
-    top: clamp(6px, 0.8vw, 13px);
-    left: clamp(5px, 0vw, 13px);
+    top: clamp(6px, 0.9vw, 13px);
+    left: clamp(1px, 0.3vw, 11px);
     max-width: clamp(15px, 1.7vw, 30px);
     height: auto;
 }
