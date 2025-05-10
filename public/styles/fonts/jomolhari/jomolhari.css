@@ -1,0 +1,8 @@
+@font-face{
+    font-family: 'Jomolhari';
+    src: url('./Jomolhari-Regular.ttf') format('truetype');
+    src: url('./Jomolhari-Regular.woff2') format('woff2');
+    src: url('./Jomolhari-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
