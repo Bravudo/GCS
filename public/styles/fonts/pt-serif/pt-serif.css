@@ -2,6 +2,7 @@
     font-family: 'QuickSand2';
     src: url('./PTSerif-Regular.ttf') format('truetype');
     src: url('./PTSerif-Regular.woff2') format('woff2');
+    src: url('./PTSerif-Regular.woff') format('woff');
     font-weight: 400;
     font-display: swap;
 }
