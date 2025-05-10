@@ -1,6 +1,7 @@
 /*    Fontes Importadas    */
 @import url('../fonts/fonts.css');
 
+
 :root{
     
     /*___Size*/
@@ -57,7 +58,7 @@
     --sevenary-color: #686868;
 
     /*__Fonts*/
-    --primary-font: "Quicksand";
+    --primary-font: "Quicksand2";
 }    
 
 
