@@ -20,8 +20,8 @@
     width: 80%;
     max-width: var(--page-max-width);
     
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: clamp(100px,20vw,400px);
+    padding-bottom: clamp(100px,20vw,400px);
 
 }
 

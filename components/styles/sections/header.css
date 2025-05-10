@@ -129,7 +129,7 @@
     
     font-weight: 700;
     font-size: clamp(4px, 1vw, 15px);
-    padding: 4px 8px;
+    padding: clamp(1px, 0.3vw, 4px) clamp(4px, 0.6vw, 8px); 
     border-radius: 4px;
 
     background-color: var(--primary-color);
