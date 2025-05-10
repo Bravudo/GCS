@@ -11,7 +11,7 @@
     /*___Header*/
     --header-height-size: 30px;
     --header-width-size: 100%;
-    --header-item-title-size: clamp(10px, 1.5vw, 23px);
+    --header-item-title-size: clamp(15px, 1.7vw, 23px);
     /*--Logo*/
     --header-logo-width-size: clamp(30px, 3vw, 45px);
     --header-logo-padding-size: 3px;

@@ -35,6 +35,7 @@
 .header_right_container{
     gap: 15px;
     justify-content: flex-end;
+    
 }
 
 /*--Logo--*/
@@ -43,9 +44,11 @@
     height: auto;
     max-width: var(--header-logo-width-size);
     padding: var(--header-logo-padding-size);
+    margin-top: 5px;
 
     cursor: pointer;
     transition: all 0.5s ease;
+
 }
 .header_logo:hover{
     scale: calc(1.04);
@@ -97,12 +100,12 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    
+    top: 5px;
     z-index: 2;
  }
 
  .header_icon_container img{
-    width: clamp(22px, 4.3vw, 45px);
+    width: clamp(30px, 4.3vw, 45px);
     height: auto;
     padding: clamp(2px, 1vw, 5px);
     border-radius: 13px;

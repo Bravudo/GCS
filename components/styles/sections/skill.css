@@ -20,9 +20,11 @@
     width: 80%;
     max-width: var(--page-max-width);
     
-    padding-top: clamp(100px,20vw,400px);
-    padding-bottom: clamp(100px,20vw,400px);
-
+    
+        margin-top: clamp(150px,20vw,400px);
+        margin-bottom: clamp(150px,20vw,400px);
+        
+    
 }
 
 
@@ -31,19 +33,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    
     gap: 25px;
     
     max-width: 100%;
     width: 100%;
     position: relative;
     padding: clamp(20px, 10vw, 100px);
-
+    
     color: var(--terceary-color);
     line-height: 1.5;
     font-size: var(--about-text-size);
     font-family: var(--primary-font);
-    
     transition: all 0.150s ease-out;
 }
 
