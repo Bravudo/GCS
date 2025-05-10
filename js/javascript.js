@@ -1,27 +1,23 @@
+/*__Google Analytics__*/
+function ativarAnalytics() {
+  const gtagScript = document.createElement('script');
+  gtagScript.setAttribute('async', '');
+  gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-Y0FSRDKJ91';
+  document.head.appendChild(gtagScript);
 
-  /*__Google Analytics__*/
-  
-  function ativarAnalytics() {
-    const gtagScript = document.createElement('script');
-    gtagScript.setAttribute('async', '');
-    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-Y0FSRDKJ91';
-    document.head.appendChild(gtagScript);
-
-    gtagScript.onload = () => {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Y0FSRDKJ91');
-    }
+  gtagScript.onload = () => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y0FSRDKJ91');
   }
+}
 
-  if (document.cookie.includes("cookies_aceitos=true")) {
-    ativarAnalytics();
-  }
+if (document.cookie.includes("cookies_aceitos=true")) {
+  ativarAnalytics();
+}
 
-
-
- // Elementos
+// Elementos
 const elements = {
   header: {
     center: document.querySelector('.header_center_container'),
@@ -78,15 +74,17 @@ let lastScrollPosition = window.scrollY;
 window.addEventListener('scroll', () => {
   const currentScroll = window.scrollY;
   
-  // Verifica se está subindo E entrou na área do banner
+  const sobreSection = document.getElementById('sobre');
+  const sobrePosition = sobreSection ? sobreSection.offsetTop : 680;
+  
   if (currentScroll <= 395 && currentScroll < lastScrollPosition) {
     playAnimations();
   }
   
-  // Controle do header
-  const shouldColorHeader = currentScroll > 680;
+  const shouldColorHeader = currentScroll > sobrePosition - 100; // 100px antes da seção
   elements.header.center.classList.toggle('scrolled', shouldColorHeader);
   elements.header.icons.classList.toggle('scrolled', shouldColorHeader);
+  
   
   lastScrollPosition = currentScroll;
 });

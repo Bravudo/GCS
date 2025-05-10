@@ -58,7 +58,7 @@
     font-size: var(--header-item-title-size);
     font-weight: 400;
     
-    color: var(--secondary-color);
+    color: var(--primary-color);
 
     padding: 5px;
     border-radius: 7px;
